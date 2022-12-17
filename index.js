@@ -17,7 +17,7 @@ app.use("/",routes)
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
-mongoose.connect('process.env.Database_url',{ useNewUrlParser: true, useUnifiedTopology: true },()=>{
+mongoose.connect(process.env.Database_url,{ useNewUrlParser: true, useUnifiedTopology: true },()=>{
     console.log("connected to db")
 })
 app.listen(8000, () => console.log("App listening on port 8000"))
