@@ -13,7 +13,7 @@ router.get("/data", async (req, res) => {
         res.json(
             getPost
         )
-    }
+    }  
     catch (e) {
         res.send.json({
             status: "failed",

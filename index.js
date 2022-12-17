@@ -13,7 +13,7 @@ var corsOptions = {
     origin: 'https://instareact10x.onrender.com',
     optionsSuccessStatus: 200 
   }
-app.use("/",routes)
+app.use("/",routes)  
 app.use(express.json());
 app.use(bodyParser.urlencoded({ extended: false }))
 app.use(bodyParser.json());
